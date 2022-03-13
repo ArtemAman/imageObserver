@@ -9,9 +9,10 @@ import UIKit
 
 protocol MainViewOutput: AnyObject {
     
-//    var mainViewModel: ReceipViewModel? { get set }
+    var mainViewModel: MainViewModel? { get set }
     
     func viewLoaded()
-    func configureDetailRecipeViewController(cellIndex:Int)
+    func getNextImages()
+    func configureDetailViewController(cellIndex:Int)
     
 }
