@@ -24,8 +24,7 @@
 		F057DC7827DCD7BD0097A616 /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057DC7727DCD7BD0097A616 /* ResponseModel.swift */; };
 		F057DC7A27DCD9D20097A616 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057DC7927DCD9D20097A616 /* Parser.swift */; };
 		F057DC7C27DCD9FA0097A616 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057DC7B27DCD9FA0097A616 /* MainService.swift */; };
-		F057DC8027DCFD180097A616 /* DurationCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057DC7F27DCFD180097A616 /* DurationCalc.swift */; };
-		F057DC8327DD000D0097A616 /* HeightCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057DC8227DD000D0097A616 /* HeightCalculation.swift */; };
+		F057DC8327DD000D0097A616 /* CheckLenthStringExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057DC8227DD000D0097A616 /* CheckLenthStringExtention.swift */; };
 		F057DC8527DE041A0097A616 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057DC8427DE041A0097A616 /* DetailViewController.swift */; };
 		F057DC8727DE042C0097A616 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057DC8627DE042C0097A616 /* DetailPresenter.swift */; };
 		F057DC8927DE043A0097A616 /* DetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057DC8827DE043A0097A616 /* DetailConfigurator.swift */; };
@@ -59,8 +58,7 @@
 		F057DC7727DCD7BD0097A616 /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
 		F057DC7927DCD9D20097A616 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		F057DC7B27DCD9FA0097A616 /* MainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainService.swift; sourceTree = "<group>"; };
-		F057DC7F27DCFD180097A616 /* DurationCalc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationCalc.swift; sourceTree = "<group>"; };
-		F057DC8227DD000D0097A616 /* HeightCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightCalculation.swift; sourceTree = "<group>"; };
+		F057DC8227DD000D0097A616 /* CheckLenthStringExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckLenthStringExtention.swift; sourceTree = "<group>"; };
 		F057DC8427DE041A0097A616 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F057DC8627DE042C0097A616 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		F057DC8827DE043A0097A616 /* DetailConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailConfigurator.swift; sourceTree = "<group>"; };
@@ -148,7 +146,6 @@
 			children = (
 				F057DC9927DE5FB00097A616 /* RealmBase */,
 				F057DC7227DCD3960097A616 /* Network */,
-				F057DC7F27DCFD180097A616 /* DurationCalc.swift */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -268,7 +265,7 @@
 		F057DC8127DCFFF30097A616 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
-				F057DC8227DD000D0097A616 /* HeightCalculation.swift */,
+				F057DC8227DD000D0097A616 /* CheckLenthStringExtention.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -420,7 +417,6 @@
 				F057DC6F27DCC0530097A616 /* MainConfigurator.swift in Sources */,
 				F057DC6B27DCC0390097A616 /* MainPresenter.swift in Sources */,
 				F057DC7A27DCD9D20097A616 /* Parser.swift in Sources */,
-				F057DC8027DCFD180097A616 /* DurationCalc.swift in Sources */,
 				F057DC6927DCC0220097A616 /* MainViewOutput.swift in Sources */,
 				F057DC6D27DCC0460097A616 /* MainModel.swift in Sources */,
 				F057DC8527DE041A0097A616 /* DetailViewController.swift in Sources */,
@@ -434,7 +430,7 @@
 				F057DC7627DCD6250097A616 /* MainAPI.swift in Sources */,
 				F057DC9027DE207C0097A616 /* WebImageView.swift in Sources */,
 				F057DC7827DCD7BD0097A616 /* ResponseModel.swift in Sources */,
-				F057DC8327DD000D0097A616 /* HeightCalculation.swift in Sources */,
+				F057DC8327DD000D0097A616 /* CheckLenthStringExtention.swift in Sources */,
 				F057DC4627DCBA830097A616 /* SceneDelegate.swift in Sources */,
 				F057DC9327DE28E30097A616 /* FooterView.swift in Sources */,
 			);
@@ -583,8 +579,10 @@
 				INFOPLIST_FILE = imageObserver/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -594,7 +592,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -611,8 +609,10 @@
 				INFOPLIST_FILE = imageObserver/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -622,7 +622,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

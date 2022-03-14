@@ -77,6 +77,7 @@ extension MainPresenter: MainViewOutput {
     func viewLoaded() {
         if NetworkMonitor.shared.isConnected {
             RealmBase.deleteAll()
+            page = 1
             getImagesFromInternet(page: String(page))
         } else {
             getImagesFromDatabase()

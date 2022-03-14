@@ -7,10 +7,10 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
+    
     var window: UIWindow?
-
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -21,9 +21,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let home = UINavigationController()
         let mainModule = MainModuleConfigurator().configure()
         home.viewControllers = [mainModule.0]
-        self.window?.rootViewController = home
-        window?.makeKeyAndVisible()
+        window?.rootViewController = home
         window?.windowScene = windowScene
+        window?.makeKeyAndVisible()
+        
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {

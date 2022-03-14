@@ -30,8 +30,6 @@ class MainViewController: UIViewController{
         
         presenter?.viewLoaded()
         setupView()
-        
-//        HUD.show(.labeledProgress(title: "Загрузка", subtitle: "в процессе..."), onView: self.view)
     }
     
     private func setupView() {
@@ -52,13 +50,6 @@ class MainViewController: UIViewController{
         ])
     }
     
-//    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-//        if scrollView.contentOffset.y > scrollView.contentSize.height / 1.1 {
-//            footer.showLoader()
-//            sleep(10)
-//            presenter?.getNextImages()
-//        }
-//    }
     
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if scrollView.contentOffset.y > scrollView.contentSize.height / 1.1 {
@@ -81,12 +72,9 @@ extension MainViewController: MainViewInput {
     
     
     func updateTable() {
+        
         cells = presenter?.mainViewModel
         tableView.reloadData()
-        
-        
-//        HUD.show(.labeledSuccess(title: "Загрузка", subtitle: "завершена"), onView: self.view)
-//        HUD.hide(afterDelay: 1, completion: nil)
     }
 }
 

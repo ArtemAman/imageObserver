@@ -7,8 +7,6 @@
 
 
 import UIKit
-import Kingfisher
-
 
 class DetailViewController: UIViewController {
     

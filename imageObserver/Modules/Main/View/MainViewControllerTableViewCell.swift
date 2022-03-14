@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Kingfisher
 
 class MainViewControllerTableViewCell: UITableViewCell {
     
@@ -186,10 +185,15 @@ class MainViewControllerTableViewCell: UITableViewCell {
             metaLabelSize.text = "Image size: \(String(size))"
         }
         
-        likeLabel.text = String(model.likes!)
-        commentLabel.text = String(model.comments!)
-        downloadLabel.text = String(model.downloads!)
-        viewLabel.text = String(model.views!)
+        let likes = model.likes ?? 0
+        let comments = model.comments ?? 0
+        let downloads = model.downloads ?? 0
+        let views = model.views ?? 0
+        
+        likeLabel.text = String(likes)
+        commentLabel.text = String(comments)
+        downloadLabel.text = String(downloads).checkLenth()
+        viewLabel.text = String(views).checkLenth()
     }
     
     func setupView() {
